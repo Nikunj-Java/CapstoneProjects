@@ -1,0 +1,5 @@
+.row {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+  }

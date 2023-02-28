@@ -1,0 +1,26 @@
+<h1>User Details</h1>
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <i class="fa fa-id-card"></i><b>Id :</b> {{user.id}}
+    </li>
+
+    <li class="list-group-item">
+        <i class="fa fa-user"></i>Name : {{user.name}}
+    </li>
+
+    <li class="list-group-item">
+        <i class="fa fa-envelope"></i>Email : {{user.email}}
+    </li>
+
+    <li class="list-group-item">
+        <i class="fa fa-globe"></i>Country : {{user.country}}
+    </li>
+
+    <li class="list-group-item">
+        <i class="fa fa-sign-in"></i>Login : 
+        <b *ngIf="user.login==1" style="color: green;">Logged In</b>
+            <b *ngIf="user.login==0" style="color: red;">Logged Out</b>
+    </li>
+
+</ul>

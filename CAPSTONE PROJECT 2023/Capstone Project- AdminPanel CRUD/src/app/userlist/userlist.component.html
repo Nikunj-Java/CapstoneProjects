@@ -1,0 +1,30 @@
+<h1>User List</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th><i class="fa fa-id-card"></i>Id</th>
+            <th><i class="fa fa-user"></i>Name</th>
+            <th><i class="fa fa-envelope"></i>Email</th>
+            <th> <i class="fa fa-globe"></i>Country</th>
+            <th><i class="fa fa-sign-in"></i>Status</th>
+            <th><i class="fa fa-info-circle"></i>Details</th>
+            <th><i class="fa fa-pen"></i>Edit Details</th>
+            <th><i class="fa fa-trash"></i>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users">
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.email}}</td>
+            <td>{{u.country}}</td>
+            <td *ngIf="u.login==1" style="color: green;">Logged In</td>
+            <td *ngIf="u.login==0" style="color: red;">Logged Out</td>
+            <td> <a href="/details/{{u.id}}"><button class="btn btn-primary"><i class="=fa-solid fa-eye"></i>View</button></a> </td>
+            <td><a routerLink="/edit/{{u.id}}">
+                <button class="btn btn-warning"> <i class="=fa-solid fa-pen"></i>Edit</button></a></td>
+            <td><button type="button"(click)='DeleteUserById(u.id)' class="btn btn-danger"><i class="fa-solid fa-trash"></i>Delete</button></td>
+        </tr>
+    </tbody>
+</table>

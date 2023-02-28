@@ -1,0 +1,38 @@
+ 
+
+
+
+
+<div class="container">
+
+ 
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Available</th>
+          <th> Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let todo of todoList">
+          <td>{{todo.id}}</td>
+          <td>{{todo.product}}</td>
+          <td>{{todo.category}}</td>
+          <td>{{todo.price}}</td>
+          <td>{{todo.available}}</td>
+          <td>
+            <button type="button" class="btn btn-link" (click)="editTodo(todo)">Edit</button>
+            <button type="button" class="btn btn-link" (click)="deleteTodo(todo.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-success" (click)="createTodo()">Create</button>
+  </div>
+
+  
+<router-outlet></router-outlet>
