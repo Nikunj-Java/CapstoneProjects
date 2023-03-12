@@ -6,7 +6,7 @@ Spring Data JPA: provies all classes and interfaces related to hibernate (persis
 (@Entity, @Table, @Id, @GeneratedValue,@Column)
 MySQL Driver: MySQL database dependency to connect with Database
 Spring devtools: help you to restart your application automatically when you change code of your application.
-
+Cross Origin : to work with Spring boot on 8082 port no and Angular on 4200 port no
 (add all this dependencies while creating a project)
 _______________________________________________________________
 
@@ -18,15 +18,15 @@ customer(id,name,phone, address,email,password)
 product(id, name,price, description, rating)
 admin (id,username,password)
 categories(id, name, description)
-order(oid, pid, cid, payment)
+order(oid, pid, cid, payment,dob)
 
 (Entity class Requires variable declaration, default and parameterized constructor, getters and setters, toString method)
 
-If project required any relationships that you can add
+If project required any relationships that you can add (one to many,many to one)
 
 1 catogory --> many products
 
-(create all this entities in your model package)
+(create all this entities in your model package-like : com.simplilearn.model)
 
 
 create Repository
@@ -61,6 +61,7 @@ create for all services.
 
 Create Controllers
 --------------------------------------
+@restcontroller
 
 class customerController{
 	@Autowired

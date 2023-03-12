@@ -19,6 +19,7 @@ export class FormComponent implements OnInit {
   user={
     name:'',
     country:'',
+    password:'',
     email:'',
     login:'',
 
@@ -29,6 +30,7 @@ export class FormComponent implements OnInit {
       name:this.user.name,
       email:this.user.email,
       country:this.user.country,
+      password:this.user.password,
       login:this.user.login,
     }
     if(!data.name){
@@ -37,6 +39,10 @@ export class FormComponent implements OnInit {
     }
     if(!data.email){
       alert('please provide email');
+      return;
+    }
+    if(!data.password){
+      alert('please provide password');
       return;
     }
     if(!data.country){

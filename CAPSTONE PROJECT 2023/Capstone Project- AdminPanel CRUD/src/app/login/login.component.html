@@ -1,0 +1,29 @@
+<div style="width: 500px; margin:auto;">
+    <div class="submit-form">
+        <div *ngIf="!isSubmitted">
+
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input class="form-control" id="id" required [(ngModel)]="user.id" name="id">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" id="email" required [(ngModel)]="user.email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Password</label>
+                <input class="form-control" id="password" required [(ngModel)]="user.password" name="password">
+            </div>
+
+             
+            <button (click)="checkUser()" class="btn btn-success">Login</button>
+
+            
+        </div>
+        <div *ngIf="isSubmitted">
+            <h3> User Found</h3>
+        </div>
+    </div>
+</div>

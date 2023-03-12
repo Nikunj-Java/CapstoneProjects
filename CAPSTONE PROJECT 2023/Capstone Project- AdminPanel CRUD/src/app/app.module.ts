@@ -9,6 +9,7 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { FormComponent } from './form/form.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     UserlistComponent,
     UserdetailsComponent,
     FormComponent,
-    EditUserComponent
+    EditUserComponent,
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,

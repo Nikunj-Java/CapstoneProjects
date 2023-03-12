@@ -21,6 +21,10 @@ export class DataService {
   getUserById(id:number):Observable<UserClass>{
     return this.http.get<UserClass>(this.url+id);
   }
+  //get user by email
+  getUserByEmail(email:string):Observable<UserClass>{
+    return this.http.get<UserClass>(this.url+email);
+  }
   //create record
   create(data:any ):Observable<any>{
     return this.http.post(this.url,data).pipe();
