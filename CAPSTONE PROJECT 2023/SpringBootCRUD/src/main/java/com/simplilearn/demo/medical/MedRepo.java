@@ -1,4 +1,4 @@
-package com.simplilearn.demo.repo;
+package com.simplilearn.demo.medical;
 
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -8,9 +8,8 @@ import org.springframework.stereotype.Repository;
 import com.simplilearn.demo.entity.User;
 
 @Repository
-public interface UserRepo extends JpaRepository<User,Integer> {
+public interface MedRepo extends JpaRepository<Medicine,Integer> {
 	
 	 
-	 
-
+	
 }

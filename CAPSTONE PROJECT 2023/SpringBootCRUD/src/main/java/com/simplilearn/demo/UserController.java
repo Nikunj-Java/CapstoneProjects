@@ -1,6 +1,7 @@
 package com.simplilearn.demo;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -60,6 +61,11 @@ public class UserController {
 		else
 			return new ResponseEntity<Object>("No User Available to Update",HttpStatus.NOT_FOUND);
 	}
+	
+	 
+	
+	  
+	 
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<String>deleteUser(@PathVariable int id){

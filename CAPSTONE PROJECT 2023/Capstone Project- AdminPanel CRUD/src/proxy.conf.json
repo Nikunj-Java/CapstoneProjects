@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://file.io",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

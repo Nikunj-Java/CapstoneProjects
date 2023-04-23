@@ -1,0 +1,53 @@
+
+<div class="row">
+  <div class="col-md-6 offset-3">
+      <h2 class="text-primary">Update Medicine By Id : {{medicine.id}}</h2>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+              <label style="font-size: 20pt;">Name:<b>{{medicine.name | uppercase}}</b></label>
+              <!--<input type="text" formControlName="name" class="form-control" 
+              [(ngModel)]="medicine.name" 
+              [ngClass]="{'is-invalid':submitted && form['name'].errors}">
+              <div *ngIf="submitted && form['name'].errors" class="invalid-feedback">
+                  Name Can't be empty
+              </div>
+            -->
+          </div>
+
+          <div class="form-group">
+              <label>Description:</label>
+              <input type="text" formControlName="description" class="form-control" 
+              [(ngModel)]="medicine.description" 
+              [ngClass]="{'is-invalid':submitted && form['description'].errors}">
+              <div *ngIf="submitted && form['description'].errors" class="invalid-feedback">
+                Description Can't be empty
+              </div>
+          </div>
+
+
+         
+          <div class="form-group">
+              <label>Category:</label>
+              <input type="text" formControlName="category" class="form-control" 
+              [(ngModel)]="medicine.category" 
+              [ngClass]="{'is-invalid':submitted && form['category'].errors}">
+              <div *ngIf="submitted && form['category'].errors" class="invalid-feedback">
+                Category Can't be empty
+              </div>
+          </div>
+
+          <div class="form-group">
+              <label>Price:</label>
+              <input type="text" formControlName="price" class="form-control" 
+              [(ngModel)]="medicine.price" 
+              [ngClass]="{'is-invalid':submitted && form['price'].errors}">
+              <div *ngIf="submitted && form['price'].errors" class="invalid-feedback">
+                  Price Can't be empty
+              </div>
+          </div>
+           
+          <br>
+          <button class="btn btn-primary">Update Details</button>
+      </form>
+  </div>
+</div>

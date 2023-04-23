@@ -25,9 +25,9 @@
             <td>{{u.country}}</td>
             <td *ngIf="u.login==1" style="color: green;">Logged In</td>
             <td *ngIf="u.login==0" style="color: red;">Logged Out</td>
-            <td> <a href="/details/{{u.id}}"><button class="btn btn-primary"><i class="=fa-solid fa-eye"></i>View</button></a> </td>
+            <td> <a href="/details/{{u.id}}"><button class="btn btn-primary"><i class="fa-solid fa-eye"></i>View</button></a> </td>
             <td><a routerLink="/edit/{{u.id}}">
-                <button class="btn btn-warning"> <i class="=fa-solid fa-pen"></i>Edit</button></a></td>
+                <button class="btn btn-warning"> <i class="fa-solid fa-pen"></i>Edit</button></a></td>
             <td><button type="button"(click)='DeleteUserById(u.id)' class="btn btn-danger"><i class="fa-solid fa-trash"></i>Delete</button></td>
         </tr>
     </tbody>

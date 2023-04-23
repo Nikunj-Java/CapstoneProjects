@@ -1,0 +1,31 @@
+<h1>Medicine Details</h1>
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <i class="fa fa-id-card"></i><b>Id :</b> {{medicine.id}}
+    </li>
+
+    <li class="list-group-item">
+        <i class="fa fa-user"></i><b>Name : </b>{{medicine.name}}
+    </li>
+
+    <li class="list-group-item">
+        <i class="fa fa-envelope"></i><b>Description :</b> {{medicine.description}}
+    </li>
+
+    <li class="list-group-item">
+         <i class="fa fa-lock"  ></i> <b >Category :  </b>
+        {{medicine.category}}
+        </li>
+
+    <li class="list-group-item">
+        <i class="fa fa-rupee-sign"></i><b>Price :</b> {{medicine.price}}
+    </li>
+
+    <li class="list-group-item">
+        <i class="fa fa-image"></i><b>Image :</b> <img src="../assets/{{medicine.name| lowercase}}.png"  width="40%" height="20%" >
+    </li>
+
+    
+
+</ul>

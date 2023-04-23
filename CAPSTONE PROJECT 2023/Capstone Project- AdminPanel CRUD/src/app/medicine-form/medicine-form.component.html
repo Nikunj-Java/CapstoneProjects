@@ -1,0 +1,56 @@
+<div style="width: 500px; margin:auto;">
+    <div class="submit-form">
+        <div *ngIf="!isSubmitted">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" id="name" required [(ngModel)]="medicine.name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input class="form-control" id="description" required [(ngModel)]="medicine.description" name="description">
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <input class="form-control" id="category" required [(ngModel)]="medicine.category" name="category">
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input class="form-control" id="price" required [(ngModel)]="medicine.price" name="price">
+            </div>
+
+            <div *ngIf="currentFile" class="progress">
+                <div
+                  class="progress-bar progress-bar-info progress-bar-striped"
+                  role="progressbar"
+                  attr.aria-valuenow="{{ progress }}"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  [ngStyle]="{ width: progress + '%' }"
+                >
+                  {{ progress }}%
+                </div>
+              </div>
+              
+              <label class="btn btn-default">
+                <input type="file" (change)="selectFile($event)" />
+              </label>
+              
+              <button class="btn btn-success" [disabled]="!selectedFiles" (click)="addUser()">
+                Upload
+              </button>
+              
+              <div class="alert alert-light" role="alert">{{ message }}</div>
+              
+
+             
+              
+            
+        </div>
+        <div *ngIf="isSubmitted">
+            <h3> Data Added Successfully</h3>
+        </div>
+    </div>
+</div>

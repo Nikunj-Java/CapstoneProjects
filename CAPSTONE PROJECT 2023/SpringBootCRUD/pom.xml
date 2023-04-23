@@ -56,6 +56,12 @@
 		</dependency>
 <!--springboot is working on 8082 port , But Angular will run on 4200 port-->
 
+ 		<!--Devtool Dependency-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+ 
 	</dependencies>
 
 	<build>

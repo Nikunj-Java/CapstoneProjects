@@ -1,12 +1,18 @@
 Springboot Project (Backend- api)
 ----------------------------
+DEPENDENCIES
+************
+Spring web : which provide all spring web classes and interfaces to work
 
-Spring web : which provide all sping web classes and interfaces to work
 Spring Data JPA: provies all classes and interfaces related to hibernate (persisetence)
 (@Entity, @Table, @Id, @GeneratedValue,@Column)
+
 MySQL Driver: MySQL database dependency to connect with Database
+
 Spring devtools: help you to restart your application automatically when you change code of your application.
+
 Cross Origin : to work with Spring boot on 8082 port no and Angular on 4200 port no
+
 (add all this dependencies while creating a project)
 _______________________________________________________________
 
@@ -14,11 +20,11 @@ add all DB properties in application.properties file
 
 create Model (Entities)
 ---------------------------------------
-customer(id,name,phone, address,email,password)
-product(id, name,price, description, rating)
-admin (id,username,password)
-categories(id, name, description)
-order(oid, pid, cid, payment,dob)
+1. customer(id,name,phone, address,email,password)
+2. product(id, name,price, description, rating)
+3. admin (id,username,password)
+4. categories(id, name, description)
+5. order(oid, pid, cid, payment,dob)
 
 (Entity class Requires variable declaration, default and parameterized constructor, getters and setters, toString method)
 
@@ -40,7 +46,7 @@ create repo for all.
 
 create Service
 -----------------------------
-
+ 
 interface CustomerService{
 	public Customer addCustomer(Customer c);
 	//list all methods 
@@ -66,6 +72,7 @@ Create Controllers
 class customerController{
 	@Autowired
 	private CustomerService service;
+
 	@PostMapping("/api/customer")
 	public ResponseEntity<Object> saveCustomer(@RequestBody Customer cust)
 	{

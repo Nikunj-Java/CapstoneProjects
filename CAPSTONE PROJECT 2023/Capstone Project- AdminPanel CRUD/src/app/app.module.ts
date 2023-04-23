@@ -10,6 +10,11 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { FormComponent } from './form/form.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { LoginComponent } from './login/login.component';
+import { MedicineComponent } from './medicine/medicine.component';
+import { MedDetailsComponent } from './med-details/med-details.component';
+import { MedicineFormComponent } from './medicine-form/medicine-form.component';
+import { EditMedicineComponent } from './edit-medicine/edit-medicine.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,11 @@ import { LoginComponent } from './login/login.component';
     FormComponent,
     EditUserComponent,
     LoginComponent,
+    MedicineComponent,
+    MedDetailsComponent,
+    MedicineFormComponent,
+    EditMedicineComponent,
+    DashboardComponent,
     
   ],
   imports: [
@@ -27,7 +37,8 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

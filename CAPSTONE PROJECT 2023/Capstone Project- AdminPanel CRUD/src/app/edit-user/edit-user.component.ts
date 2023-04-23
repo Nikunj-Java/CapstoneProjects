@@ -45,7 +45,7 @@ export class EditUserComponent implements OnInit {
       {
         this.service.updateUser(this.user,Number(this.id)).subscribe(x=>console.log(x));
         alert("Data Updated Successfully");
-        this.router.navigate(['list'])
+        this.router.navigate(['users'])
       }
   }
 
