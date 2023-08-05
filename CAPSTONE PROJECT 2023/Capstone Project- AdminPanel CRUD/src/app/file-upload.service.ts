@@ -79,7 +79,7 @@ export class FileUploadService {
     });
   }
 
-  //update user
+  //update med
   updateMed(cust:MedicineClass,id:number){
     return this.http.put(this.baseUrl+id,cust);
   }
