@@ -1,0 +1,31 @@
+2023-08-07T06:02:27.723+05:30  INFO 18568 --- [restartedMain] com.neueda.demo.Swagger1Application      : Starting Swagger1Application using Java 17.0.2 with PID 18568 (D:\Neueda\neueda_spring_workspace\Swagger-1\target\classes started by Admin in D:\Neueda\neueda_spring_workspace\Swagger-1)
+2023-08-07T06:02:27.751+05:30  INFO 18568 --- [restartedMain] com.neueda.demo.Swagger1Application      : No active profile set, falling back to 1 default profile: "default"
+2023-08-07T06:02:27.979+05:30  INFO 18568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-08-07T06:02:27.980+05:30  INFO 18568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-08-07T06:02:31.515+05:30  INFO 18568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-07T06:02:31.533+05:30  INFO 18568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-07T06:02:31.533+05:30  INFO 18568 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-07T06:02:31.704+05:30  INFO 18568 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-07T06:02:31.706+05:30  INFO 18568 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3723 ms
+2023-08-07T06:02:32.932+05:30  INFO 18568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-07T06:02:33.292+05:30  INFO 18568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-07T06:02:33.603+05:30  INFO 18568 --- [restartedMain] com.neueda.demo.Swagger1Application      : Started Swagger1Application in 6.801 seconds (process running for 7.914)
+2023-08-07T06:03:46.811+05:30  INFO 18568 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-08-07T06:03:46.844+05:30  INFO 18568 --- [Thread-4] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-08-07T06:05:05.353+05:30  INFO 18568 --- [restartedMain] com.neueda.demo.Swagger1Application      : Starting Swagger1Application using Java 17.0.2 with PID 18568 (D:\Neueda\neueda_spring_workspace\Swagger-1\target\classes started by Admin in D:\Neueda\neueda_spring_workspace\Swagger-1)
+2023-08-07T06:05:05.354+05:30  INFO 18568 --- [restartedMain] com.neueda.demo.Swagger1Application      : No active profile set, falling back to 1 default profile: "default"
+2023-08-07T06:05:06.442+05:30  INFO 18568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-08-07T06:05:06.444+05:30  INFO 18568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-08-07T06:05:06.446+05:30  INFO 18568 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-07T06:05:06.488+05:30  INFO 18568 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-08-07T06:05:06.489+05:30  INFO 18568 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1120 ms
+2023-08-07T06:05:06.865+05:30  INFO 18568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-08-07T06:05:07.318+05:30  INFO 18568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-07T06:05:07.485+05:30  INFO 18568 --- [restartedMain] com.neueda.demo.Swagger1Application      : Started Swagger1Application in 2.229 seconds (process running for 161.797)
+2023-08-07T06:05:07.491+05:30  INFO 18568 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-08-07T06:05:13.487+05:30  INFO 18568 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-07T06:05:13.491+05:30  INFO 18568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-08-07T06:05:13.492+05:30  INFO 18568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-08-07T06:05:13.495+05:30  INFO 18568 --- [http-nio-8080-exec-1] com.neueda.demo.LogController            : Log level: INFO
+2023-08-07T06:05:13.495+05:30 ERROR 18568 --- [http-nio-8080-exec-1] com.neueda.demo.LogController            : Log level: ERROR
+2023-08-07T06:05:13.495+05:30  WARN 18568 --- [http-nio-8080-exec-1] com.neueda.demo.LogController            : Log level: WARN
