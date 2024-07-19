@@ -1,0 +1,66 @@
+Step:1 download Node 
+
+Step:2 check Version
+
+Step:3 download Appium
+	> npm i -g aapium
+
+	>aapium --version
+
+Step:4 download appium-doctor
+	>npm install appium-doctor -g
+	>appium-doctor --help
+
+Step:5 check for android help
+	>appium-doctor --android
+
+Step:6 correct the pathe needed for android_home using appium doctor
+
+Step:7 download android sdk manager or android studio from android
+
+	Android sdk:
+	--------------
+	> extract the downloded file
+	> goto> sdk>bin folder> run the command of your required api
+	> goto> about phone and check your mobile api> for me its 30
+	> run the below command
+	> sdkmanager --sdk_root="C:\Users\Admin\Desktop\sdk\bin" "platform-tools" "platforms;android-30"
+	> sdkmanager --sdk_root="path of your sdk bin folder" "platform-tools" "platforms;android-your android api"
+
+	> click yeas to install
+	> goto>your mobile and emable USB DEBUUGING MODE ON> Install APP Via USB 
+	> open new cmd
+	> adb device
+	you will see the list of Connected Device
+	> if you will see unauthorised device That means your USB Debugging is not Enabled
+	> if you will see the name and code of Devices that means all set to go
+Step:8 ANDROID_HOME
+	>goto>advance System Settings>environment Variable> System> Add JAVA HOME and Path
+	> JAVA_HOME:C:\Users\Admin\AppData\Local\Android\Sdk
+	> Path : C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools
+Step:9 Start Appium Server
+	> open cmd
+	> appium + Enter
+	> You Will See the Server is Started
+Step:10: Create Java Maven Project and Add Dependencies
+	
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>7.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+Step:11 Update The Project
+
+Step:12 Create Java Class under Test Folder
+
+Step:13  Add Calculator Test
+
+
+	
+	
